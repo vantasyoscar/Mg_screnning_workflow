@@ -1,0 +1,33 @@
+# General,I/O
+NCORE   = 8
+LWAVE   = Fasle
+LCHARG  = False
+LREAL   = Auto
+
+ISPIN  = 2
+#MAGMOM = 2*0.6 4*5.0 8*0.6
+IVDW   = 11
+
+# e-step
+ENCUT   = 520
+NELM    = 60
+NELMIN  = 8
+ISMEAR  = 0
+SIGMA   = 0.1
+ALGO    = N
+PREC    = A          
+EDIFF   = 1-5
+ADDGRID = TRUE
+
+# i-step
+ISIF   = 3
+IBRION = 2
+POTIM  = 0.2
+EDIFFG = -0.05
+NSW    = 200
+
+#DFT+U Calculation
+LDAU   =  False        (Activate DFT+U)
+LDATYPE=  2            (Dudarev; only U-J matters)
+#LDAUJ  =  0    0    0         (J for each species)
+LMAXMIX=  4            (Mixing cut-off; 4-d, 6-f)
